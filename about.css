@@ -1,0 +1,93 @@
+body, h1, h5, h3{
+	margin: auto 0;
+	font-family: 'Dosis';
+	overflow-x: hidden;
+}
+
+.flex {
+	display: flex;
+}
+
+/*HEADER AND NAV BAR*/
+
+.head {
+	width: 100%;
+	height: max(60px, 15vh);
+	background-color: #41729F;
+	align-items: center;
+	color: white;
+	line-height: 1.1rem;
+}
+.left {
+	margin-right: none;
+}
+.right {
+	margin-left: auto;
+}
+.about {
+	width: 100%;
+	background-color: #caf0f8;
+}
+.headitem {
+	margin: 15px;
+	font-family: 'Biryani';
+	font-size: 1.1rem;
+	transition: .1s;
+}
+.headitem:hover {
+	transform: scale(1.25);
+	text-decoration: 2px #E9EAEC underline;
+}
+
+/*TITLE*/
+.title_box {
+	height: 25vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+#title {
+	font-size: 10vmin;
+}
+
+/*DESCRIPTION*/
+.desc_box {
+	height: 30vh;
+	background-color: #7EC8E3;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+#desc {
+	width: 90%;
+	font-size: 2.5vmin;
+}
+
+/*MEET TEAM SECTION*/
+.meetteam {
+	height: 20vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#teambutton {
+	width: 50vw;
+	height: 7vh;
+	border: 4px solid #189AB4;
+	border-radius: 10px;
+	background-color: #D4F1F4;
+	font-size: 4vmin;
+	text-align: center;
+}
+
+#teambutton:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
+

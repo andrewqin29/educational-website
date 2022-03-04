@@ -1,0 +1,315 @@
+body, h1, h5, h3{
+	margin: auto 0;
+	font-family: 'Dosis';
+	overflow-x: hidden;
+}
+
+.flex {
+	display: flex;
+}
+
+@media only screen and (max-width:1000px) {
+
+}
+
+/*HEADER AND NAV BAR*/
+
+.head {
+	width: 100%;
+	height: max(60px, 15vh);
+	background-color: #41729F;
+	align-items: center;
+	color: white;
+	line-height: 1.1rem;
+}
+.left {
+	margin-right: none;
+}
+.right {
+	margin-left: auto;
+}
+.about {
+	width: 100%;
+	background-color: #caf0f8;
+}
+.headitem {
+	margin: 15px;
+	font-family: 'Biryani';
+	font-size: 2vmin;
+	transition: .1s;
+}
+.headitem:hover {
+	transform: scale(1.25);
+	text-decoration: 2px #E9EAEC underline;
+}
+
+/*BANNER SECTION*/
+
+.banner {
+	display: flex;
+	height: 52vh;
+	width: 100%;
+	/*background-image:url("bannerbgbg.jpg");
+	filter: blur(8px);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 100% auto;*/
+  	background-color: #E9EAEC;
+	justify-content: space-around;
+	align-items: center;
+}
+.bannerbg {
+	width: 40vw;
+	height: 46vh;
+	margin-left: 1.5vw;
+	background-image: url("bannerbg.jpg");
+	border-radius: 10px;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 100% auto;
+}
+.bannertext {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 50vw;
+	height: 46vh;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#bannertitle {
+	font-family: 'Dosis';
+	font-size:6vw;
+	margin: none;
+	border: 4px solid #6AABD2;
+	background-color: #D9E4EC;
+	border-radius: 15px;
+	text-align: center;
+	justify-content: center;
+}
+
+#bannertitlesub {
+	margin: 0px;
+	font-family: 'Dosis';
+	font-size: 4vmin;
+	text-align: center;
+}
+#bannertitledesc {
+	font-family: 'Kanit';
+	margin: none;
+	font-size: 2.25vmin;
+}
+#bannertitlegap {
+	width: 2vw;
+}
+
+/*#learnbutton {
+	width: 20vw;
+	height: auto;
+	font-size: 1.2rem;
+	font-family: 'Kanit';
+	border: 4px solid #6AABD2;
+	background-color: #D9E4EC;
+	border-radius: 10px;
+	text-align: center;
+
+}*/
+#learnbutton:hover {
+	transform: scale(1.1);
+}
+
+/*COURSES SECTION*/
+
+.courses {
+	height: 50vh;
+	width: 100%;
+}
+
+.learnbanner {
+	width: 100%;
+	height: 8vh;
+	background-color: #003B73;
+	font-size: 2.1vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.topics {
+	height: 42vh;
+	width: 100%;
+
+}
+
+.topicschild {
+	flex-grow: 1;
+	transition: .1s;
+	text-align: center;
+	font-family: 'Dosis';
+	font-size: 4vmin;
+	width: 33%;
+}
+
+.topicschild h1 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.topicschild:hover {
+	transform: scale(1.1);
+}
+
+.topicschild:hover:after {
+	content: attr(data-hover);
+	color: white;
+	
+}
+
+
+#courselit {
+	color: #003B73;
+}
+#coursemath {
+	color: #D44A45;
+}
+#coursecode{
+	color: #FFB067;
+}
+
+#coursesgap {
+	height: 2vh;
+	background-color: #003B73;
+}
+
+/*ABOUT SECTION*/
+
+.about {
+	height: 45vh;
+}
+
+.aboutsection {
+	width: 35vw;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.FAQ {
+	flex-direction: column;
+	width: 65vw;
+	align-items: stretch;
+}
+
+.FAQlight {
+	background-color: #BFD7ED;
+}
+
+.FAQdark {
+	background-color: #003B73;
+	color: white;
+}
+
+.FAQsection {
+	flex: 1;
+	/*border-radius: 10px;*/
+	font-family: 'Dosis';
+	font-size: 2.4vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#FAQtitle {
+	font-size: 5vmin;
+}
+
+.aboutsection h1 {
+	text-align: center;
+	text-decoration: underline;
+	margin: 0;
+	padding: 0;
+	font-size: 3.75vmin;
+}
+
+.aboutsection p {
+	font-size: 2.5vmin;
+	margin: 0px 10px;
+	padding: 0;
+
+}
+
+.aboutbutton {
+	width: 80%;
+	height: auto;
+	border: 4px solid #E7625F;
+	text-align: center;
+	font-size: 2.75vmin;
+	color: white;
+	background-color: #D44A45;
+}
+
+.aboutbutton:hover {
+	color: #F7BEC0;
+	transform: scale(1.1);
+}
+
+#aboutsectiontextchild {
+	padding: auto, 20px, auto, 20px;
+}
+
+/*STATS SECTION*/
+.stats {
+	height: 20vh;
+	background-color: #E9EAEC;
+	justify-content: space-around;
+}
+
+.statsitem {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.statsitem h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4.5vmin;
+}
+.statsitem h5{
+	margin: 0;
+	padding: 0;
+	font-size: 2.75vmin;
+}
+.statsitem:hover {
+	transform: scale(1.25);
+}
+
+
+/*FOOTER*/
+
+#footer {
+	height: 15vh;
+	background-color: #003B73;
+	color: white;
+	font-size: 1.5vmin;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#footer p {
+	margin: 0;
+	padding: 0;
+}
+#thanks {
+	font-size: 2.5vmin;
+}
+
+
+
+
+
+
+
+
